@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="EPIControls.Controls.LayoutUserCotrol.LUC_TopBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:fontawesome="http://schemas.fontawesome.com/icons/svg" 
+             xmlns:epi="clr-namespace:EPI.Colors;assembly=EPI"
+             xmlns:converters="clr-namespace:EPIControls.Converters"
+             xmlns:local="clr-namespace:EPIControls.Controls.LayoutUserCotrol"
+             mc:Ignorable="d" x:Name="root" >
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/EPI;component/Colors/WPF/EPIColors.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <converters:WindowStateMarginConverter x:Key="WindowStateMarginConverter"/>
+            <converters:WindowStateIconConverter x:Key="WindowStateIconConverter"/>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Width" Value="20"/>
+                <Setter Property="Height" Value="20"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="BorderBrush" Value="Transparent"/>
+                <Setter Property="DockPanel.Dock" Value="Right"/>
+                <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True"/>
+            </Style>
+            <Style x:Key="Admin" TargetType="{x:Type Button}">
+                <Setter Property="DockPanel.Dock" Value="Right"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="BorderBrush" Value="Transparent"/>
+                <Setter Property="FontSize" Value="13"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="Text" Value="{Binding Title, ElementName=root}"/>
+            </Style>
+            <Style TargetType="{x:Type fontawesome:SvgAwesome}">
+                <Setter Property="PrimaryColor" Value="{StaticResource COLOR_DARK_BLUE }"/>
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <DockPanel x:Name="docpnlTitle" Background="{StaticResource COLOR_DARK_GREEN}" LastChildFill="False">
+        <Image Source="../../Assets/Images/HelpImage.png" Margin="5 0 0 0" Width="15" Height="15"/>
+        <TextBlock Foreground="{StaticResource COLOR_DARK_ORANGE}" FontWeight="Bold" FontSize="13" Margin="5 0 0 0 "/>
+        <Button x:Name="ExitButton" Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter},ConverterParameter=Exit}">
+            <fontawesome:SvgAwesome Icon="Solid_Xmark" PrimaryColor="{StaticResource COLOR_RED}"/>
+        </Button>
+        <Button x:Name="MaximizeButton" Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter}}">
+            <fontawesome:SvgAwesome Icon="Regular_Square" Width="14" Height="14"  PrimaryColor="{StaticResource COLOR_YELLOW}"/>
+        </Button>
+        <Button x:Name="MinimizeButton" Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter}}">
+            <fontawesome:SvgAwesome Icon="Solid_Minus" PrimaryColor="{StaticResource COLOR_ORANGE}" Margin="-2 3 -2 -5"/>
+        </Button>
+        <!--<TextBlock Text="ADMIN" Style="{StaticResource Admin}" Foreground="{StaticResource ColorYellow}" FontWeight="Bold" FontSize="13" Margin="0 0 10 0" />-->
+    </DockPanel>
+</UserControl>

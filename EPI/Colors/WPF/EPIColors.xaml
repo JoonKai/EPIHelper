@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--#region Base Colors-->
+    <SolidColorBrush x:Key="COLOR_YELLOW" Color="#FFFEE500"/>
+    <SolidColorBrush x:Key="COLOR_WHITE" Color="#FFFAFAFA"/>
+    <SolidColorBrush x:Key="COLOR_ORANGE" Color="#FFF58513"/>
+    <SolidColorBrush x:Key="COLOR_GRAY" Color="#FF7F7979"/>
+    <SolidColorBrush x:Key="COLOR_RED" Color="#FFE90909"/>
+    <SolidColorBrush x:Key="COLOR_BLACK" Color="#FF010101"/>
+    <SolidColorBrush x:Key="COLOR_GREEN" Color="#FF08FC81"/>
+    <!--#endregion-->
+    <!--#region Dark Colors-->
+    <SolidColorBrush x:Key="COLOR_DARK_ORANGE" Color="#FFF58513"/>
+    <SolidColorBrush x:Key="COLOR_DARK_BLUE" Color="#FF060E41"/>
+    <SolidColorBrush x:Key="COLOR_DARK_GREEN" Color="#FF0F2C00"/>
+    <SolidColorBrush x:Key="COLOR_DARK_RED" Color="#FF7E0303"/>
+    <!--#endregion-->
+    <!--#region Light Colors-->
+    <SolidColorBrush x:Key="COLOR_LIGHT_ORANGE" Color="#FFFBBE80"/>
+    <SolidColorBrush x:Key="COLOR_LIGHT_BLUE" Color="#FF374CD8"/>
+    <SolidColorBrush x:Key="COLOR_LIGHT_RED" Color="#FFCF1919"/>
+    <!--#endregion-->
+</ResourceDictionary>

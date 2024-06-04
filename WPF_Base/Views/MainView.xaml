@@ -4,16 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EPIHelper.Views" 
+        xmlns:top="clr-namespace:EPIControls.Controls.LayoutUserCotrol;assembly=EPIControls"
         xmlns:viewmodels="clr-namespace:EPIHelper.ViewModels" 
         d:DataContext="{d:DesignInstance Type=viewmodels:MainViewModel}"
         mc:Ignorable="d"
-        Title="MainView" Height="450" Width="800">
+        Title="MainView" Height="450" Width="800" WindowStyle="None">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="20" ResizeBorderThickness="2"/>
+    </WindowChrome.WindowChrome>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Menu Grid.Row="0" Background="Transparent">
+        <top:LUC_TopBar Grid.Row="0"/>
+        <Menu Grid.Row="1" Background="Transparent">
             <MenuItem Header="파일"/>
             <MenuItem Header="윈도우"/>
             <MenuItem Header="환경설정">

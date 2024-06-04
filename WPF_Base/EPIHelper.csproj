@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>HelpImage.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FontAwesome6.Core, Version=2.5.1.0, Culture=neutral, PublicKeyToken=150287d219411f04, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome6.Svg.2.5.1\lib\net472\FontAwesome6.Core.dll</HintPath>
@@ -158,10 +161,17 @@
     <Folder Include="Views\PageViews\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EPIControls\EPIControls.csproj">
+      <Project>{1f2cad49-5d7b-4870-8c16-9eed0ac3549f}</Project>
+      <Name>EPIControls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EPI\EPI.csproj">
       <Project>{b2f16efc-6e55-4750-979c-e0eb537b81b7}</Project>
       <Name>EPI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="HelpImage.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

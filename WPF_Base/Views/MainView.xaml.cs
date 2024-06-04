@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EPI.Commons;
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using WinInterop = System.Windows.Interop;
 
 namespace EPIHelper.Views
 {
@@ -22,6 +13,13 @@ namespace EPIHelper.Views
         public MainView()
         {
             InitializeComponent();
+            this.SourceInitialized += MainView_SourceInitialized;
+        }
+
+        private void MainView_SourceInitialized(object sender, EventArgs e)
+        {
+            System.IntPtr handle = (new WinInterop.WindowInteropHelper(this)).Handle;
+            WinInterop.HwndSource.FromHwnd(handle).AddHook(new WinInterop.HwndSourceHook(Maximizer.WindowProc));
         }
     }
 }
