@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using EPI.Extensions;
 
 namespace EPIControls.Controls.LayoutUserCotrol
@@ -8,11 +9,17 @@ namespace EPIControls.Controls.LayoutUserCotrol
     {
         #region /////Dependency Property
         public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(LUC_TopBar), new PropertyMetadata("EPI"));
+        public static readonly DependencyProperty TitleColorProperty = DependencyProperty.Register("TitleColor", typeof(Brush), typeof(LUC_TopBar), new PropertyMetadata(Brushes.Black));
 
         public string Title
         {
             get { return (string)GetValue(TitleProperty); }
             set { SetValue(TitleProperty, value); }
+        }
+        public Brush TitleColor
+        {
+            get { return (Brush)GetValue(TitleColorProperty); }
+            set { SetValue(TitleColorProperty, value); }
         }
         #endregion
         #region /////Property

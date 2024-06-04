@@ -8,12 +8,16 @@
     <SolidColorBrush x:Key="COLOR_RED" Color="#FFE90909"/>
     <SolidColorBrush x:Key="COLOR_BLACK" Color="#FF010101"/>
     <SolidColorBrush x:Key="COLOR_GREEN" Color="#FF08FC81"/>
+    <SolidColorBrush x:Key="COLOR_EMERALD" Color="#C6DBDA"/>
+    <SolidColorBrush x:Key="COLOR_PITCH" Color="#FFCCB6"/>
     <!--#endregion-->
     <!--#region Dark Colors-->
     <SolidColorBrush x:Key="COLOR_DARK_ORANGE" Color="#FFF58513"/>
-    <SolidColorBrush x:Key="COLOR_DARK_BLUE" Color="#FF060E41"/>
+    <SolidColorBrush x:Key="COLOR_DARK_BLUE1" Color="#0B314A"/>
+    <SolidColorBrush x:Key="COLOR_DARK_BLUE2" Color="#07263B"/>
     <SolidColorBrush x:Key="COLOR_DARK_GREEN" Color="#FF0F2C00"/>
     <SolidColorBrush x:Key="COLOR_DARK_RED" Color="#FF7E0303"/>
+    <SolidColorBrush x:Key="COLOR_DARK_PITCH" Color="#FF968A"/>
     <!--#endregion-->
     <!--#region Light Colors-->
     <SolidColorBrush x:Key="COLOR_LIGHT_ORANGE" Color="#FFFBBE80"/>

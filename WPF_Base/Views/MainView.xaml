@@ -12,20 +12,27 @@
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="20" ResizeBorderThickness="2"/>
     </WindowChrome.WindowChrome>
-    <Grid>
+    <Grid Background="{StaticResource COLOR_DARK_BLUE1}">
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="23"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <top:LUC_TopBar Grid.Row="0"/>
-        <Menu Grid.Row="1" Background="Transparent">
-            <MenuItem Header="파일"/>
-            <MenuItem Header="윈도우"/>
-            <MenuItem Header="환경설정">
+        <top:LUC_TopBar Title="EPI Helper" TitleColor="White" Grid.Row="0"/>
+        <top:LUC_CustomGrid Grid.Row="1" Margin="2 2 2 0" GridLineThickness="0.5" ShowCustomGridLines="True" GridLineBrush="{StaticResource COLOR_WHITE}"/>
+        <Menu VerticalAlignment="Center" Padding="3" Foreground="{StaticResource COLOR_WHITE}" FontFamily="{StaticResource Jamsil_Regular}" Grid.Row="1" Background="Transparent">
+            <MenuItem Header="파일" Foreground="{StaticResource COLOR_DARK_ORANGE}"/>
+            <MenuItem Header="윈도우" Foreground="{StaticResource COLOR_YELLOW}">
+                <MenuItem Header="PL Trend" Foreground="{StaticResource COLOR_BLACK}"/>
+            </MenuItem>
+            <MenuItem Header="환경설정" Foreground="{StaticResource COLOR_DARK_PITCH}">
                 <MenuItem x:Name="OpenSettings" Command="{Binding ShowSettingViewCommand}" Header="Settings" Foreground="Black" FontWeight="Light"/>
             </MenuItem>
             <MenuItem Header="기타"/>
         </Menu>
+        <top:LUC_CustomGrid Grid.Row="2" Margin="2" GridLineThickness="0.5" ShowCustomGridLines="True" GridLineBrush="{StaticResource COLOR_WHITE}"/>
+        <Grid Margin="6" Grid.Row="2">
+            
+        </Grid>
     </Grid>
 </Window>

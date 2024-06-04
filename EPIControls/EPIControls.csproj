@@ -60,6 +60,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\LayoutUserCotrol\LUC_CustomGrid.cs" />
     <Compile Include="Controls\LayoutUserCotrol\LUC_TopBar.xaml.cs">
       <DependentUpon>LUC_TopBar.xaml</DependentUpon>
     </Compile>

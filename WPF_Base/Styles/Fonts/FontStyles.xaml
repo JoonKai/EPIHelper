@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FontFamily x:Key="Jamsil_Thin">application:,,,/Assets/Fonts/#The Jamsil 1 Thin</FontFamily>
+    <FontFamily x:Key="Jamsil_Light">application:,,,/Assets/Fonts/#The Jamsil 2 Light</FontFamily>
+    <FontFamily x:Key="Jamsil_Regular">application:,,,/Assets/Fonts/#The Jamsil 3 Regular</FontFamily>
+    <FontFamily x:Key="Jamsil_Medium">application:,,,/Assets/Fonts/#The Jamsil 4 Medium</FontFamily>
+    <FontFamily x:Key="Jamsil_Bold">application:,,,/Assets/Fonts/#The Jamsil 5 Bold</FontFamily>
+    <FontFamily x:Key="Jamsil_ExtraBold">application:,,,/Assets/Fonts/#The Jamsil 6 ExtraBold</FontFamily>
+</ResourceDictionary>
