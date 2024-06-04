@@ -1,0 +1,24 @@
+﻿<Window x:Class="EPIHelper.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EPIHelper.Views" 
+        xmlns:viewmodels="clr-namespace:EPIHelper.ViewModels" 
+        d:DataContext="{d:DesignInstance Type=viewmodels:MainViewModel}"
+        mc:Ignorable="d"
+        Title="MainView" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Background="Transparent">
+            <MenuItem Header="파일"/>
+            <MenuItem Header="환경설정">
+                <MenuItem x:Name="OpenSettings" Command="{Binding ShowSettingViewCommand}" Header="Settings" Foreground="Black" FontWeight="Light"/>
+            </MenuItem>
+            <MenuItem Header="기타"/>
+        </Menu>
+    </Grid>
+</Window>
