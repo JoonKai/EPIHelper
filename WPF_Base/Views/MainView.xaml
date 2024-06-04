@@ -10,11 +10,12 @@
         Title="MainView" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
+            <RowDefinition Height="20"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Menu Grid.Row="0" Background="Transparent">
             <MenuItem Header="파일"/>
+            <MenuItem Header="윈도우"/>
             <MenuItem Header="환경설정">
                 <MenuItem x:Name="OpenSettings" Command="{Binding ShowSettingViewCommand}" Header="Settings" Foreground="Black" FontWeight="Light"/>
             </MenuItem>
