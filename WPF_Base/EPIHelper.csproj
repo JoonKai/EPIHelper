@@ -108,9 +108,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Commands\RelayCommand.cs" />
-    <Compile Include="Services\IParameterReceiver.cs" />
-    <Compile Include="Services\IViewService.cs" />
-    <Compile Include="Services\ViewService.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\SettingViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
