@@ -36,22 +36,23 @@
             <Style TargetType="{x:Type TextBlock}">
                 <Setter Property="Text" Value="{Binding Title, ElementName=root}"/>
                 <Setter Property="Foreground" Value="{Binding TitleColor, ElementName=root}"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
             </Style>
             <Style TargetType="{x:Type fontawesome:SvgAwesome}">
-                <Setter Property="PrimaryColor" Value="{StaticResource COLOR_DARK_BLUE }"/>
+                <Setter Property="PrimaryColor" Value="{StaticResource COLOR_DARK_BLUE1}"/>
             </Style>
         </ResourceDictionary>
     </UserControl.Resources>
     <DockPanel x:Name="docpnlTitle" Background="{StaticResource COLOR_DARK_GREEN}" LastChildFill="False">
-        <Image Source="../../Assets/Images/HelpImage.png" Margin="5 0 0 0" Width="15" Height="15"/>
+        <Image Source="../../Assets/Images/PC.png" Margin="5 0 0 0" Width="15" Height="15"/>
         <TextBlock FontWeight="Bold" FontSize="13" Margin="5 0 0 0 "/>
-        <Button x:Name="ExitButton" Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter},ConverterParameter=Exit}">
+        <Button x:Name="ExitButton">
             <fontawesome:SvgAwesome Icon="Solid_Xmark" PrimaryColor="{StaticResource COLOR_RED}"/>
         </Button>
-        <Button x:Name="MaximizeButton" Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter}}">
+        <Button x:Name="MaximizeButton">
             <fontawesome:SvgAwesome Icon="Regular_Square" Width="14" Height="14"  PrimaryColor="{StaticResource COLOR_YELLOW}"/>
         </Button>
-        <Button x:Name="MinimizeButton" Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter}}">
+        <Button x:Name="MinimizeButton">
             <fontawesome:SvgAwesome Icon="Solid_Minus" PrimaryColor="{StaticResource COLOR_ORANGE}" Margin="-2 3 -2 -5"/>
         </Button>
         <!--<TextBlock Text="ADMIN" Style="{StaticResource Admin}" Foreground="{StaticResource ColorYellow}" FontWeight="Bold" FontSize="13" Margin="0 0 10 0" />-->
