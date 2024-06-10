@@ -16,6 +16,7 @@
             </ResourceDictionary.MergedDictionaries>
             <converters:WindowStateMarginConverter x:Key="WindowStateMarginConverter"/>
             <converters:WindowStateIconConverter x:Key="WindowStateIconConverter"/>
+            <converters:BooleanToVisibilityConverter x:Key="BoolToVis"/>
             <Style TargetType="{x:Type Button}">
                 <Setter Property="Width" Value="20"/>
                 <Setter Property="Height" Value="20"/>
@@ -50,7 +51,7 @@
             <fontawesome:SvgAwesome Icon="Solid_Xmark" PrimaryColor="{StaticResource COLOR_RED}"/>
         </Button>
         <Button x:Name="MaximizeButton">
-            <fontawesome:SvgAwesome Icon="Regular_Square" Width="14" Height="14"  PrimaryColor="{StaticResource COLOR_YELLOW}"/>
+            <fontawesome:SvgAwesome Icon="Regular_Square" Width="14" Height="14" Visibility="{Binding Visibility, Converter={StaticResource BoolToVis}}"   PrimaryColor="{StaticResource COLOR_YELLOW}"/>
         </Button>
         <Button x:Name="MinimizeButton">
             <fontawesome:SvgAwesome Icon="Solid_Minus" PrimaryColor="{StaticResource COLOR_ORANGE}" Margin="-2 3 -2 -5"/>

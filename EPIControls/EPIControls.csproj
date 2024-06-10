@@ -64,6 +64,7 @@
     <Compile Include="Controls\LayoutUserCotrol\LUC_TopBar.xaml.cs">
       <DependentUpon>LUC_TopBar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\WindowStateIconConverter.cs" />
     <Compile Include="Converters\WindowStateMarginConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -26,7 +26,7 @@
                 <MenuItem Header="PL Trend" x:Name="LoadPagePLTrend" Foreground="{StaticResource COLOR_BLACK}"/>
             </MenuItem>
             <MenuItem Header="환경설정" Foreground="{StaticResource COLOR_DARK_PITCH}">
-                <MenuItem x:Name="OpenSettings" Command="{Binding ShowSettingViewCommand}" Header="설정" Foreground="Black" FontWeight="Light"/>
+                <MenuItem x:Name="LoadSettingWindow"  Header="설정" Foreground="Black" FontWeight="Light"/>
             </MenuItem>
             <MenuItem Header="기타"/>
         </Menu>

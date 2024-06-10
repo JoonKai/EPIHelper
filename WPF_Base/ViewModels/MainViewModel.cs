@@ -12,17 +12,12 @@ namespace EPIHelper.ViewModels
     public class MainViewModel : Conductor<IScreen>.Collection.OneActive
     {
         
-        //public ICommand ShowSettingViewCommand => new RelayCommand<object>(OpenSettingView);
 
-        //private void OpenSettingView(object obj)
-        //{
-        //    OnViewLoaded(SettingView);
-        //}
-
-
+        private readonly IWindowManager _windowManager;
         private IEventAggregator _eventAggregator;
-        public MainViewModel()
+        public MainViewModel(IWindowManager windowManager)
         {
+            _windowManager = windowManager;
             _eventAggregator = new EventAggregator();
             _eventAggregator.SubscribeOnUIThread(this);
             Task.Run(async () =>
@@ -42,6 +37,13 @@ namespace EPIHelper.ViewModels
             Task.Run(async () =>
             {
                 await ActivateItemAsync(new PLTrendViewModel());
+            });
+        }
+        public void LoadSettingWindow()
+        {
+            Task.Run(async () =>
+            {
+                await _windowManager.ShowDialogAsync(new SettingViewModel());
             });
         }
         //public Task HandleAsync(string message, CancellationToken cancellationToken)
