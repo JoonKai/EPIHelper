@@ -10,7 +10,7 @@ namespace EPIControls.Controls.LayoutUserCotrol
         #region /////Dependency Property
         public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(LUC_TopBar), new PropertyMetadata("EPI"));
         public static readonly DependencyProperty TitleColorProperty = DependencyProperty.Register("TitleColor", typeof(Brush), typeof(LUC_TopBar), new PropertyMetadata(Brushes.Black));
-        public static new readonly DependencyProperty VisibilityProperty = DependencyProperty.Register("Visibility", typeof(bool), typeof(LUC_TopBar), new PropertyMetadata(true));
+        public static readonly DependencyProperty IsVisibilityProperty = DependencyProperty.Register("IsVisibility", typeof(bool), typeof(LUC_TopBar), new PropertyMetadata(true));
 
         public string Title
         {
@@ -22,10 +22,10 @@ namespace EPIControls.Controls.LayoutUserCotrol
             get { return (Brush)GetValue(TitleColorProperty); }
             set { SetValue(TitleColorProperty, value); }
         }
-        public new bool Visibility
+        public bool IsVisibility
         {
-            get { return (bool)GetValue(VisibilityProperty); }
-            set { SetValue(VisibilityProperty, value); }
+            get { return (bool)GetValue(IsVisibilityProperty); }
+            set { SetValue(IsVisibilityProperty, value); }
         }
 
 

@@ -41,10 +41,8 @@ namespace EPIHelper.ViewModels
         }
         public void LoadSettingWindow()
         {
-            Task.Run(async () =>
-            {
-                await _windowManager.ShowDialogAsync(new SettingViewModel());
-            });
+                //await _windowManager.ShowDialogAsync(new SettingViewModel());
+            _windowManager.ShowDialogAsync(new SettingViewModel());
         }
         //public Task HandleAsync(string message, CancellationToken cancellationToken)
         //{
