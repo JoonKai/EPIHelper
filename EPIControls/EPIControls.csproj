@@ -46,6 +46,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -60,6 +61,15 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\BaseUserControl\EPIOpenFile.xaml.cs">
+      <DependentUpon>EPIOpenFile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BaseUserControl\EPIOpenFolder.xaml.cs">
+      <DependentUpon>EPIOpenFolder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BaseUserControl\EPITextbox.xaml.cs">
+      <DependentUpon>EPITextbox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\LayoutUserCotrol\LUC_CustomGrid.cs" />
     <Compile Include="Controls\LayoutUserCotrol\LUC_TopBar.xaml.cs">
       <DependentUpon>LUC_TopBar.xaml</DependentUpon>
@@ -91,14 +101,24 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Controls\BaseUserControl\EPIOpenFile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BaseUserControl\EPIOpenFolder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BaseUserControl\EPITextbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\LayoutUserCotrol\LUC_TopBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controls\BaseUserControl\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\EPI\EPI.csproj">
       <Project>{b2f16efc-6e55-4750-979c-e0eb537b81b7}</Project>
