@@ -50,8 +50,8 @@
         <Button x:Name="ExitButton">
             <fontawesome:SvgAwesome Icon="Solid_Xmark" PrimaryColor="{StaticResource COLOR_RED}"/>
         </Button>
-        <Button x:Name="MaximizeButton">
-            <fontawesome:SvgAwesome Icon="Regular_Square" Width="14" Height="14" Visibility="{Binding IsVisibility, Converter={StaticResource BoolToVis}}"   PrimaryColor="{StaticResource COLOR_YELLOW}"/>
+        <Button x:Name="MaximizeButton" Visibility="{Binding IsVisibility,ElementName=root ,Converter={StaticResource BoolToVis}}" >
+            <fontawesome:SvgAwesome Icon="Regular_Square" Width="14" Height="14"   PrimaryColor="{StaticResource COLOR_YELLOW}"/>
         </Button>
         <Button x:Name="MinimizeButton">
             <fontawesome:SvgAwesome Icon="Solid_Minus" Width="14" PrimaryColor="{StaticResource COLOR_ORANGE}" Margin="-2 3 -2 -5"/>

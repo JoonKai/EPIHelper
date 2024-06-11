@@ -15,13 +15,9 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <layout:LUC_TopBar Title="설정" TitleColor="{StaticResource COLOR_WHITE}" IsVisibility="True"/>
-        <layout:LUC_CustomGrid Margin="0.5 0 0.5 0.5" ShowCustomGridLines="True" GridLineBrush="{StaticResource COLOR_WHITE}" GridLineThickness="0.5"/>
-        <Grid Margin="1" Grid.Row="1" Background="{StaticResource COLOR_DARK_BLUE1}">
-            <TabControl Background="Transparent">
-                <TabItem Header="일반"/>
-                <TabItem Header="데이터베이스"/>
-            </TabControl> 
+        <layout:LUC_TopBar Title="설정" TitleColor="{StaticResource COLOR_WHITE}" IsVisibility="False"/>
+        <Grid Margin="0.5" Grid.Row="1" Background="{StaticResource COLOR_DARK_BLUE1}">
+            
         </Grid>
     </Grid>
 </Window>
