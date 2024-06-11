@@ -7,6 +7,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Styles/Fonts/FontStyles.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/EPI;component/Colors/WPF/EPIColors.xaml"/>
+                <ResourceDictionary Source="/Styles/Controls/Generic.xaml"/>
                 <ResourceDictionary>
                     <local:Bootstrapper x:Key="Bootstrapper"/>
                 </ResourceDictionary>

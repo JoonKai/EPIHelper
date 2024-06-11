@@ -17,7 +17,11 @@
         </Grid.RowDefinitions>
         <layout:LUC_TopBar Title="설정" TitleColor="{StaticResource COLOR_WHITE}" IsVisibility="False"/>
         <Grid Margin="0.5" Grid.Row="1" Background="{StaticResource COLOR_DARK_BLUE1}">
-            
+            <TabControl>
+                <TabItem Header="일반"/>
+                <TabItem Header="색상"/>
+                <TabItem Header="데이터베이스"/>
+            </TabControl>
         </Grid>
     </Grid>
 </Window>
