@@ -61,6 +61,8 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\BaseCustomControl\EPICombobox.cs" />
+    <Compile Include="Controls\BaseCustomControl\EPISlider.cs" />
     <Compile Include="Controls\BaseUserControl\EPIOpenFile.xaml.cs">
       <DependentUpon>EPIOpenFile.xaml</DependentUpon>
     </Compile>
@@ -116,6 +118,10 @@
     <Page Include="Controls\LayoutUserCotrol\LUC_TopBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup />
