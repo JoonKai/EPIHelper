@@ -13,6 +13,6 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Text="추후 업데이트 예정" FontSize="40"/>
-        <con:EPISlider Grid.Row="1" Width="500" Height="50"/>
+        <con:EPIDatePicker Grid.Row="1" Width="500" Height="50"/>
     </Grid>
 </UserControl>

@@ -62,7 +62,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls\BaseCustomControl\EPICombobox.cs" />
+    <Compile Include="Controls\BaseCustomControl\EPIDatePicker.cs" />
     <Compile Include="Controls\BaseCustomControl\EPISlider.cs" />
+    <Compile Include="Controls\BaseCustomControl\Units\CalendarBox.cs" />
+    <Compile Include="Controls\BaseCustomControl\Units\CalendarBoxItem.cs" />
+    <Compile Include="Controls\BaseCustomControl\Units\CalendarSwitch.cs" />
+    <Compile Include="Controls\BaseCustomControl\Units\ChevronButton.cs" />
+    <Compile Include="Controls\BaseCustomControl\Units\DayOfWeek.cs" />
     <Compile Include="Controls\BaseUserControl\EPIOpenFile.xaml.cs">
       <DependentUpon>EPIOpenFile.xaml</DependentUpon>
     </Compile>
@@ -122,6 +128,38 @@
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\EPICombobox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\EPIDatePicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\EPISlider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Units\CalendarBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Units\CalendarBoxItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Units\CalendarSwitch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Units\ChevronButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Units\DayOfWeek.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup />
