@@ -69,6 +69,9 @@
     <Compile Include="Controls\BaseCustomControl\Units\CalendarSwitch.cs" />
     <Compile Include="Controls\BaseCustomControl\Units\ChevronButton.cs" />
     <Compile Include="Controls\BaseCustomControl\Units\DayOfWeek.cs" />
+    <Compile Include="Controls\BaseUserControl\EPILoadingSpinner.xaml.cs">
+      <DependentUpon>EPILoadingSpinner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\BaseUserControl\EPIOpenFile.xaml.cs">
       <DependentUpon>EPIOpenFile.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Controls\BaseUserControl\EPILoadingSpinner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\BaseUserControl\EPIOpenFile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

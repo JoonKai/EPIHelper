@@ -5,14 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:EPIHelper.Views"
              xmlns:con="clr-namespace:EPIControls.Controls.BaseCustomControl;assembly=EPIControls"
+             xmlns:usercon="clr-namespace:EPIControls.Controls.BaseUserControl;assembly=EPIControls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Text="추후 업데이트 예정" FontSize="40"/>
         <con:EPIDatePicker Grid.Row="1" Width="500" Height="50"/>
+        <usercon:EPILoadingSpinner Duration="0:0:0:1" SpinnerColor="DarkOrange" Grid.Row="2" Width="100" Height="100"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Grid.Row="2" Text="Loading...."/>
     </Grid>
 </UserControl>
