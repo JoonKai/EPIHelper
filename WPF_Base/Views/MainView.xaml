@@ -8,7 +8,7 @@
         xmlns:viewmodels="clr-namespace:EPIHelper.ViewModels" 
         d:DataContext="{d:DesignInstance Type=viewmodels:MainViewModel}"
         mc:Ignorable="d"
-        Title="MainView" Height="450" Width="800" WindowStyle="None">
+        Title="MainView" Height="850" Width="1400" WindowStyle="None">
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="20" ResizeBorderThickness="2"/>
     </WindowChrome.WindowChrome>
